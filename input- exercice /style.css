@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2, h4{
+    text-align: center;
+    margin: 20px 0;
+    color: #333333;
+}
+
+li{
+    font-size: 36px;
+    cursor: pointer;
+}
+
+input{
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 24px;;
+    border-radius: 20px;
+    color: black;
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 20px;
+    background-color: #333333;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
