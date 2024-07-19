@@ -22,7 +22,24 @@ function add() {
     li.addEventListener('click', function() {
         // Remove o elemento <li> da lista
         ul.removeChild(li);
+       
     });
+    
+    // Adiciona um evento de mouseover ao elemento <li>
+    li.addEventListener('mouseover', function() {
+        // Cria um novo elemento <span> para exibir o "x"
+        const span = document.createElement('span');
+        span.innerHTML = '<span style="float:right; color:red; font-weight:bold;">&xotime;</span>';
+        
+        // Adiciona o elemento <span> ao elemento <li>
+        li.appendChild(span);
+    });
+
+    // Adiciona um evento de mouseout ao elemento <li>
+    li.addEventListener('mouseout', function() {
+        // Remove o elemento <span> do elemento <li>
+        li.removeChild(li.lastChild);
+    }); 
 
     // Adiciona o elemento <li> à lista
     ul.appendChild(li);
