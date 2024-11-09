@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Inicial - FirstPage</title>
+    <style>
+        /* Resetando estilos padrão */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Corpo da página */
+        body {
+            font-family: "Arial", sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            text-align: center;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* Cabeçalho */
+        h1 {
+            font-size: 3rem;
+            color: #2d3e50;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            font-family: "Roboto", sans-serif;
+            letter-spacing: 2px;
+        }
+
+        /* Parágrafo */
+        p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        /* Seção de flexbox */
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        /* Estilo das imagens */
+        img {
+            border-radius: 10px;
+            filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.1));
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.15));
+        }
+
+        /* Estilo dos textos das pessoas */
+        p:nth-child(odd) {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            div {
+                flex-direction: column;
+            }
+
+            img {
+                width: 250px;
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Bem-vindo a minha First-Page!</h1>
+
+    <p>Hello_World.</p>
+    <p>Este é um projeto Spring Boot com Thymeleaf.</p>
+    <div style="display: flex">
+
+        <div style="flex-direction: column;">
+            <p>Elto</p>
+            <img src="images/elto-removebg-preview.png" alt="" height="300px" width="300px" />
+        </div>
+        <div style="flex-direction: column;">
+            <p>kassio</p>
+            <img src="images/kassi-removebg-preview.png" alt="" height="300px" width="300px" />
+        </div>
+        <div style="flex-direction: column;">
+            <p>JP</p>
+            <img src="images/jp-removebg-preview.png" alt="" height="300px" width="300px" />
+        </div>
+
+</body>
+
+</html>
