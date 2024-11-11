@@ -10,4 +10,9 @@ public class HomeController {
     public String home() {
         return "home";  // Retorna o template "home.html"
     }
+    
+    @GetMapping("/")  // Mapeia a rota raiz
+    public String redirectToHome() {
+        return "redirect:/home";  // Redireciona para a página "home"
+    }
 }
